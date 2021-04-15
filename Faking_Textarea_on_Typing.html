@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Type anthing slowly</h1>
+<textarea cols="50" rows="10" id="bcd" onkeydown="abc()"></textarea>
+<script>
+    let str ="Hello my friend";
+    let array = str.split('');
+    let count = 0;
+    function abc() {
+        document.getElementById('bcd').value = " ";
+        let kq = [];
+        if (count < array.length) {
+            count++;
+        } else {
+            count = 0;
+        }
+        for(let i = 0; i<count; i++){
+            kq.push(array[i]);
+        }
+        document.getElementById('bcd').value = kq.join("");
+    }
+</script>
+</body>
+</html>
