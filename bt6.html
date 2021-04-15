@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = prompt('nhap vao 1 chuoi co -');
+    let b = a.split('');
+    for (let i = 0;i < b.length; i++){
+        if (b[i] == '-'){
+            b[i] = "_"
+        }
+    }
+    document.write(b)
+</script>
+</body>
+</html>
